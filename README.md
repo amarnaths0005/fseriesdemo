@@ -19,7 +19,7 @@ Functionality:
 7. Should show the phase spectrum, as a lollipop plot. Again, should have a radio button
     to see the frequency or Fourier coefficient on the x-axis. 
     
-To invoke this application, open the file <i>index.html</i> in the browser. Tested this on Chrome. 
+To invoke this application, open the file <i>index.html</i> in the browser. Tested this on Chrome. This app uses the D3 JavaScript visualization library.
 
 Please send feedback to amarnaths.codeproject@gmail.com
 
