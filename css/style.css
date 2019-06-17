@@ -1,0 +1,78 @@
+* {
+    font-family: Arial, Verdana, sans-serif;
+    color: "#111111";
+    text-align: center;
+    min-width: 700;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1em;    
+}
+
+.container > div{
+    background:#eee;
+    padding: .1em;
+}
+
+.container > div:nth-child(odd){
+    background:#ddd;
+}
+
+.rightside {
+    display: grid;
+}
+
+.graphs{
+    display: grid;
+}
+
+.labels {
+    display: grid;
+    grid-gap: 1em;
+}
+
+svg {
+    border: 2px solid navy;
+}
+
+.graphs:nth-child(even){
+    background:#ccc;
+}
+
+.labels:nth-child(even){
+    background:#ccc;
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+  }
+  
+  .grid path {
+    stroke-width: 0;
+  }
+  
+  div.tooltip {
+    color: red;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+    height: 28px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: rgba(0,0,0,.8);
+    border: 2px solid black;
+    pointer-events: none;
+  }
+  
+  .graph-svg-component {
+      background-color: AliceBlue;
+  }
+
+  .legend rect {
+    fill:white;
+    stroke:black;
+    opacity:0.8;}

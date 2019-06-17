@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Fourier Series Demo in HTML5 -->
+<!-- By Amarnath S, amarnaths.codeproject@gmail.com, June 2019 -->
+<head>
+    <title>Fourier Series Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/d3.min.js"></script>
+    <script src="js/wave.js"></script>
+    <script src="js/fourier.js"></script>
+</head>
+
+<body>
+    <h1>
+        Demo of the Fourier Series Magnitude and Phase Spectra
+    </h1>
+    <div class="container">
+        <div>
+            <div class="graphs">
+                <div>
+                    <h3>Waveform of the Signal</h3>
+                </div>
+                <div>
+                    <svg id="svgSignal" width="600" height="140"></svg>
+                </div>
+                <form>
+                    <input type="checkbox" id="error">Show Error<br>
+                </form>
+            </div>
+            <div class="graphs">
+                <div>
+                    <h3>Magnitude Spectrum</h3>
+                </div>
+                <div>
+                    <svg id="svgMagnitude" width="600" height="140"></svg>
+                </div>
+                <form>
+                    <input type="checkbox" id="coeff">Coefficient/Frequency<br>
+                </form>
+            </div>
+            <div class="graphs">
+                <div>
+                    <h3>Phase Spectrum</h3>
+                </div>
+                <div>
+                    <svg id="svgPhase" width="600" height="140"></svg>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="labels">
+                <div>
+                    <h4>Choose Signal Type</h4>
+                    <select id="selSignalType">
+                        <option value="square">Square</option>
+                        <option value="triangle">Triangle</option>
+                        <option value="ramp">Ramp or Sawtooth</option>
+                        <option value="fullsine">Full Wave Rectified Sine</option>
+                        <!-- <option value="fullcosine">Full Wave Rectified Cosine</option>
+                        <option value="halfsine">Half Wave Rectified Sine</option>
+                        <option value="halfcosine">Half Wave Rectified Cosine</option> -->
+                    </select>
+                </div>
+            </div>
+            <div class="labels">
+                <div>
+                    <h4>Choose Signal Period</h4>
+                    <input id="sliderPeriod" type="range" min="5" max="25" step="0.1" value="10">
+                    <output id="opPeriod">5</output>
+                </div>
+            </div>
+            <div class="labels">
+                <div>
+                    <h4>Choose Number of Fourier Coefficients</h4>
+                    <input id="sliderCoeffts" type="range" min="2" max="15" value="5">
+                    <output id="opCoeffts">5</output>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
