@@ -509,7 +509,7 @@ function drawSpectrum(data, svgToDraw, magOrPhase) {
                 "translate(" + (width / 2) + " ," +
                 (height + margin.top + 9) + ")")
             .style("text-anchor", "middle")
-            .text("Frequency");
+            .text("Frequency (Hz)");
     }
 
     let yLabel = 'Phase';
