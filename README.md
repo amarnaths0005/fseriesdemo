@@ -21,6 +21,8 @@ Functionality:
     
 To invoke this application, open the file <i>index.html</i> in the browser. Tested this on Chrome. This app uses the D3 JavaScript visualization library.
 
+You can work on this app online at https://amarnaths0005.github.io/fseriesdemo/
+
 Inspired by the Example Matlab Program in the book "Signal Processing First" by McClellan, Schafer and Yoder
 
 Please send feedback to amarnaths.codeproject@gmail.com
